@@ -1,0 +1,340 @@
+* {
+        /* Basic reset */ 
+        /* --------------------------------------------------------------- */
+        body, h1, p, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #94B2BF;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #424754;
+            padding: 10px 20px;
+        }
+
+        header .logo {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: rgb(221,171,94);
+            font-family: Georgia;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 18px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color:#fff;
+        }
+/* -------------------Heading Line on Home page -------------------------------------------- */
+        h1 
+        {
+            background-color: rgb(221,171,94); 
+            color: black;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+/* -------------------H3 headings setup -------------------------------------------- */
+        h3
+        {
+            background-color: #070707; 
+            color:rgb(221,171,94);
+            font-size:xx-large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+
+        }
+
+        /* SLIDE SHOW
+/* ----------------------image slider on home pg----------------------------------------- */
+        
+        * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  background-color: #717171;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  background-color: #717171;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.mySlides {
+    width: 500px; /* Fixed width for each slide */
+    height: 300px; /* Fixed height for each slide */
+    transition: 0.6s; /* Smooth transition */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+
+.img-slide {
+    width: 100%; /* Full width of the slide */
+    height: 100%; /* Full height of the slide */
+    object-fit: cover; /* Crop images to fit the container */
+    border-radius: 10px;
+}
+
+ /* --------------------------- Table of course in home page ------------------------------------ */
+
+ .table-container {
+    background-color: #60667d; /* Light grey background */
+    font-size:large;
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center; /* Center-align text */
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid gray; /* Light grey border */
+}
+td {
+    background-color: rgb(221,171,94); /* White background for table cells */
+}
+
+
+ /* --------------------------- Details courses in Qualifications page------------------------------------ */
+
+ .course {
+    background-color: #94B2BF; /* Dull golden background */
+    color: #000; /* Black text color */
+    margin-bottom: 20px; /* Space between courses */
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+    margin-top: 0;
+    text-align: left; /* Align heading to the left */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+p {
+    font-size: 16px; /* Increase font size */
+    line-height: 1.5; /* Improve readability */
+}
+
+.enquiry-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333; /* Dark button background */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+}
+.enquiry-button:hover {
+    background-color:rgb(221,171,94); /* Lighter shade on hover */
+    color: black;
+    font-weight: bold;
+}
+
+/* ---------------------- FOOTER ----------------------*/
+.footer {
+    background-color: #424754; /* Grey background */
+    padding: 20px 0; /* Top and bottom padding */
+    text-align: center; /* Center align text */
+    position: fixed; /* Stick footer to the bottom */
+    bottom: 0; /* Position at the bottom */
+    width: 100%; /* Full width */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; /* Center the content */
+    gap: 20px; /* Space between items */
+}
+
+.footer-link
+{
+    color:rgb(221,171,94); /* Black text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Padding around links */
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+.footer-button {
+    color: rgb(221,171,94); /* Black text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Padding around links */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold;
+   
+}
+
+.footer-button {
+    background-color: #333; /* Dark background for button */
+}
+
+.footer-link:hover {
+    color: #efeded; /* Darker color on hover */
+}
+
+.footer-button:hover {
+    background-color: rgb(221,171,94); /* Lighter shade on hover */
+    color: #000;
+}
+
+/*-----------------------------------Main Content Styling ------------------------------------------*/
+  .about-us-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgb(172, 195, 214);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+}
+
+.about-us-container h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.about-us-container p {
+    text-align: justify;
+    line-height: 1.6;
+}
+/* -------------------- Enquiry Form and Contact Us form-----------------------------*/
+.Form-Enquiry, .Contact-Us {
+    background-color: rgb(172, 195, 214);;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+button
+{
+    background-color: #333; /* Dark button background */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5%; /* Rounded corners */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    padding: 10px;
+    
+}
+
+/* -------------------- -----------------------------*/
+
+}

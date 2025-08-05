@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GE Voccational courses website</title>
+    <link rel="stylesheet" href="GE-Style.css"> <!-- Link to your CSS file -->
+     <!-- Link to external JavaScript file -->
+     <script src="form.js" defer></script> 
+</head>
+<body>
+    <header> 
+        <a href="index.html">
+            <div class="Logo">
+                <img src="images/Logo.JPG" alt="GE-Logo"/>
+            </div>
+        </a>
+
+        <nav> 
+            <ul> 
+                <li><a href="About-Us.html">About Us</a></li>
+                <li><a href="Qualification-Courses.html">Qualification Courses</a></li>
+                <li><a href="Enquiry-Form.html">Enquiry Form</a></li>
+                <li><a href="Contact-Us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="Form-Enquiry">
+        <h2>Enquiry Form</h2>
+        <form onsubmit="return validateForm();" method="POST">
+            <div class="form grp">
+                <label for="fullName">Student Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Your name" >
+            </div>
+            <div class="form grp">
+                <label for="DOB">Date of Birth:</label>
+                <input type="date" id="DOB" name="DOB" placeholder="Your Date of Birth" >
+            </div>
+            <div class="form grp">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Your address" >
+            </div>
+        <div class="form grp">
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" >
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your contact number" >
+        </div>
+        <h1> ENQUIRY ABOUT </h1>
+        <div class="form-group">
+            <label for="course">Select a Course:</label>
+            <select id="course" name="course" >
+                <option value="">-- Select a course --</option>
+                <option value="Aboriginal Cultures and Education">Aboriginal Cultures and Education</option>
+                <option value="Information and Communications Technology">Information and Communications Technology</option>
+                <option value="Art and Design">Art and Design</option>
+                <option value="Building and Construction Trades">Building and Construction Trades</option>
+                <option value="Education and Training">Education and Training</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="startYear">Course Start year:</label>
+            <input type="date" id="startYear" name="startYear" placeholder="Course Start year" >
+        </div>
+
+        <div class="form-group">
+            <label for="message">Your Enquiry:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Ask us anything..." ></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">Submit Enquiry</button>
+        </div>
+    </form>
+</br>
+    <p>We will respond to your enquiry as soon as possible.</p>
+</br> </br> </br></br> </br></br>
+</div>
+<footer class="footer">
+    <div class="footer-content">
+            <a href="terms.html" class="footer-link">Terms and Conditions</a>
+             <a href="Contact-Us.html" class="footer-link">Contact Us</a>
+            <a href="Enquiry-Form.html" class="footer-button">Enquiry</a>
+      </div>
+</footer>
+           
+
+</body>
+</html>
